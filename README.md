@@ -1,7 +1,14 @@
 # RTL Fix 🔧
 
+[![License: MIT](https://img.shields.io/github/license/ori-halevi/hebrew-rtl-web-fix)](LICENSE)
+[![GitHub Pages](https://img.shields.io/github/deployments/ori-halevi/hebrew-rtl-web-fix/github-pages?label=github%20pages)](https://ori-halevi.github.io/hebrew-rtl-web-fix/)
+
 > תיקון כיווניות עברית בכל דף אינטרנט — בלחיצה אחת.
 > One-click Hebrew/RTL text direction fix for any web page.
+
+<p align="center">
+  <img src="assets/button-preview.png" alt="כפתור תיקון RTL" width="280">
+</p>
 
 ---
 
@@ -17,13 +24,9 @@
 
 ### התקנה (הדרך הקלה)
 
-1. היכנסו לדף ההתקנה: **[קישור ל-GitHub Pages שלכם]**
+1. היכנסו לדף ההתקנה: **<https://ori-halevi.github.io/hebrew-rtl-web-fix/>**
 2. גררו את הכפתור הכתום לשורת הסימניות של הדפדפן.
 3. זהו. בכל דף בעייתי — לחצו על הסימנייה.
-
-> 💡 כדי להפעיל את GitHub Pages: בריפו לכו ל-`Settings → Pages`,
-> ובחרו את ה-branch הראשי. הקישור לדף יהיה
-> `https://USERNAME.github.io/REPO/`.
 
 ### התקנה ידנית
 
@@ -40,6 +43,9 @@ javascript:(function(){var e=document.getElementById('rtl-fix-style');if(e){e.re
 ו-`unicode-bidi: isolate` למניעת ערבוב מבלבל של עברית ואנגלית.
 התגית מסומנת במזהה ייחודי, כך שלחיצה חוזרת פשוט מסירה אותה.
 
+> ⚠️ הסלקטור מכוון בכוונה רחב — הוא תופס את כל רכיבי הטקסט הנפוצים בדף.
+> אם משהו נראה מוזר אחרי הלחיצה, פשוט לחצו שוב לביטול.
+
 ---
 
 ## English
@@ -54,7 +60,7 @@ Click once to apply, click again to revert.
 
 ### Installation (the easy way)
 
-1. Open the install page: **[your GitHub Pages link]**
+1. Open the install page: **<https://ori-halevi.github.io/hebrew-rtl-web-fix/>**
 2. Drag the orange button onto your browser's bookmarks bar.
 3. Done. On any broken page, click the bookmark.
 
@@ -72,16 +78,38 @@ The bookmarklet injects a `<style>` tag that forces text elements to use
 `direction: rtl`, right alignment, and `unicode-bidi: isolate`. The tag
 carries a unique id, so clicking again simply removes it — a clean toggle.
 
+> ⚠️ The selector is intentionally broad — it catches all common text
+> elements on the page. If something looks off after clicking, just
+> click again to revert.
+
+---
+
+## Credits / קרדיטים
+
+תודה ל-[**@JJKFHG**](https://t.me/JJKFHG) מטלגרם — שממנו הגיעו הרעיון
+והגרסה הראשונית של הקוד. הפרויקט הזה הוא שיפור וליטוש של מה שהוא שלח.
+
+Big thanks to [**@JJKFHG**](https://t.me/JJKFHG) on Telegram for the
+original idea and initial code. This project is a polished version of
+what he shared.
+
 ---
 
 ## Project structure
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Drag-to-install landing page (host via GitHub Pages) |
+| `index.html` | Drag-to-install landing page (hosted via GitHub Pages) |
 | `bookmarklet.js` | Human-readable source of the bookmarklet |
+| `assets/button-preview.png` | Preview of the install button |
 | `README.md` | This file |
 | `LICENSE` | MIT License |
+
+## For developers / forking this repo
+
+To host your own copy on GitHub Pages: in your fork go to
+`Settings → Pages`, and pick the main branch as the source. Your page
+will be live at `https://USERNAME.github.io/REPO/`.
 
 ## License
 
