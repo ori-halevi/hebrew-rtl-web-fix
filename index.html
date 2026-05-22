@@ -172,6 +172,38 @@
     text-align: center;
   }
   footer a { color: var(--accent-deep); }
+
+  .demo-section { margin-top: 2rem; }
+  .demo-section h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+  .demo-intro {
+    color: #4a3f33;
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+  }
+  .demo-broken {
+    border: 1.5px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.4rem 1.3rem;
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .demo-broken h3 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: 0.6rem;
+  }
+  .demo-broken p {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+  }
+  .demo-broken p:last-child {
+    margin-bottom: 0;
+  }
 </style>
 </head>
 <body>
@@ -217,6 +249,21 @@
       ◂ תיקון RTL
     </a>
     <div class="drag-hint">↑ גררו אותי, אל תלחצו עליי</div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="demo-section">
+    <h2>אזור בדיקה — נסו עכשיו</h2>
+    <p class="demo-intro">
+      גררתם את הכפתור לשורת הסימניות? יופי. עכשיו לחצו על הסימנייה החדשה,
+      והקטע השבור למטה יסתדר מולכם. לחיצה נוספת מחזירה אותו לשבור.
+    </p>
+    <div class="demo-broken" dir="ltr">
+      <h3>טור הדעות: הקפה הזה גרוע!</h3>
+      <p>היום בבוקר הזמנתי קפה במכונה החדשה (זו עם 5 הכפתורים), ולמרבה ההפתעה — קיבלתי משקה שטעמו דומה יותר ל-water מאשר לקפה. כל מי שטעם הסכים: זה כישלון.</p>
+      <p>הסיכום: 2/10. לא ממליץ. תיקנו את המכונה!</p>
+    </div>
   </div>
 
   <details>
